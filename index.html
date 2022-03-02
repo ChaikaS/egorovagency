@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+    <title>egorovagency's test task</title>
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <div class="background-left">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="/img/background-left-desktop.png" />
+          <source media="(min-width: 780px)" srcset="/img/background-left-tablet.png" />
+          <img src="/img/background-left-mobile.png" alt="background" />
+        </picture>
+      </div>
+      <div class="background-right">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="/img/background-right-desktop.png" />
+          <source media="(min-width: 780px)" srcset="/img/background-right-tablet.png" />
+          <img src="/img/background-right-mobile.png" alt="background" />
+        </picture>
+      </div>
+      <header class="wrapper-header">
+        <div class="header-logo">
+          <picture>
+            <source media="(min-width: 780px)" srcset="/img/logo-desktop.png" />
+            <img src="/img/logo-mobile.png" alt="background" />
+          </picture>
+        </div>
+      </header>
+      <main class="wrapper-main">
+        <div class="main-title">Under Construction</div>
+        <div class="main-text">We're making lots of improvements and will be back soon</div>
+        <div class="main-countdown">
+          <div class="main-countdown__item">
+            <div>
+              <div class="main-countdown__item-days"></div>
+            </div>
+            <div class="main-countdown__item-text" data-long="Days" data-short="DD"></div>
+          </div>
+          <div class="main-countdown-dots">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="/img/timer-dots-desktop.png" />
+              <img src="/img/timer-dots-tablet.png" alt="background" />
+            </picture>
+          </div>
+          <div class="main-countdown__item">
+            <div>
+              <div class="main-countdown__item-hours"></div>
+            </div>
+            <div class="main-countdown__item-text" data-long="Hours" data-short="HH"></div>
+          </div>
+          <div class="main-countdown-dots">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="/img/timer-dots-desktop.png" />
+              <img src="/img/timer-dots-tablet.png" alt="background" />
+            </picture>
+          </div>
+          <div class="main-countdown__item">
+            <div>
+              <div class="main-countdown__item-minutes"></div>
+            </div>
+            <div class="main-countdown__item-text" data-long="Minutes" data-short="MM"></div>
+          </div>
+          <div class="main-countdown-dots">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="/img/timer-dots-desktop.png" />
+              <img src="/img/timer-dots-tablet.png" alt="background" />
+            </picture>
+          </div>
+          <div class="main-countdown__item">
+            <div class="main-countdown__item-seconds"></div>
+            <div class="main-countdown__item-text" data-long="Seconds" data-short="SS"></div>
+          </div>
+        </div>
+
+        <div class="main-go-event">
+          <div class="main-text">Check our event page when you wait:</div>
+          <form action="https://www.google.com" target="_blank">
+            <button class="main-button">
+              <div>Go to the event</div>
+              <img src="./img/arrow-right.png" alt="arrow" />
+            </button>
+          </form>
+        </div>
+      </main>
+      <footer class="wrapper-footer">
+        <form class="footer-form">
+          <input class="footer-input" type="email" placeholder="Enter your Email and get notified" />
+          <button type="submit" class="footer-button"><img src="./img/arrow-right.png" alt="arrow" /></button>
+        </form>
+      </footer>
+      <div class="popup popup-success">
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <img class="popup-close" src="./img/close-X.png" alt="close" />
+            <div class="popup-title">SUCCESS!</div>
+            <div class="popup-text">You have successfully subscribed to the email newsletter</div>
+            <button class="popup-button">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-fail">
+        <div class="popup-wrapper">
+          <div class="popup-content">
+            <img class="popup-close" src="./img/close-X.png" alt="close" />
+            <div class="popup-title">FAIL!</div>
+            <div class="popup-text">You don't have successfully subscribed to the email newsletter</div>
+            <button class="popup-button">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
